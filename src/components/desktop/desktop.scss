@@ -1,0 +1,90 @@
+@import "../../theme/variables";
+
+.taskbar-bottom {
+	height: 40px !important;
+	background: rgba(0, 0, 0, 0.55);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+}
+
+.taskbar-icon {
+	color: var(--color-white);
+	width: 45px;
+	margin-right: 5px;
+}
+
+.taskbar-quick-icon {
+	color: var(--color-white);
+	width: 30px;
+	margin-right: 5px;
+}
+
+.taskbar-quick-icon:hover {
+	color: var(--color-white);
+	cursor: pointer !important;
+	background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.taskbar-icon:hover {
+	color: var(--color-white);
+	cursor: pointer !important;
+	background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.taskbar-icon-active {
+	height: 90% !important;
+	border-bottom: 1px solid #ccc;
+	border-color: var(--color-blue) !important;
+}
+
+.onDesktop {
+	background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.onDesktop:hover {
+	background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.desktop-container {
+	height: calc(100% - 40px) !important;
+	// position: relative;
+    // height: 100vh;
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-end;
+    // padding-right: 100px;
+}
+
+.taskbar {
+	height: 40px !important;
+}
+
+.right-card {
+    position: absolute; /* Ensures it's positioned properly */
+    right: 20px; /* Adjust as per your layout */
+    top: 100px;
+	left: 1070px;
+    text-align: right; /* Aligns text to the right */
+    max-width: 400px; /* Limits width for proper word wrapping */
+    padding: 20px;
+	z-index: -1
+}
+
+.right-card .profile-image {
+    margin: 0 auto;
+    display: block;
+}
+
+.right-card .description {
+    word-wrap: break-word; /* Breaks long words for wrapping */
+    text-align: justify; /* Aligns text neatly */
+    margin-top: 10px;
+}
+
+.font-color-white {
+    color: #fff; /* Text color */
+}
+
+.uk-text-lead {
+    font-size: 1.5em; /* Adjust font size */
+}
